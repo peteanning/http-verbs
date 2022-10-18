@@ -37,7 +37,8 @@ case class HeaderCarrier(
   gaUserId        : Option[String]           = None,
   deviceID        : Option[String]           = None,
   akamaiReputation: Option[AkamaiReputation] = None,
-  otherHeaders    : Seq[(String, String)]    = Seq()
+  otherHeaders    : Seq[(String, String)]    = Seq(),
+  gnapAuthorization : Option[GnapAuthorization] = None
 ) extends LoggingDetails {
   private val logger: Logger = LoggerFactory.getLogger(getClass)
 
