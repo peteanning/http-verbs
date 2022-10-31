@@ -56,6 +56,7 @@ case class HeaderCarrier(
       HeaderNames.xForwardedFor         -> forwarded.map(_.value),
       HeaderNames.xRequestChain         -> Some(requestChain.value),
       HeaderNames.authorisation         -> authorization.map(_.value),
+      HeaderNames.gnapAuthorisation     -> gnapAuthorization.map(_.value),
       HeaderNames.trueClientIp          -> trueClientIp,
       HeaderNames.trueClientPort        -> trueClientPort,
       HeaderNames.googleAnalyticTokenId -> gaToken,
